@@ -61,10 +61,8 @@ autocmd BufNewFile,BufRead *.py setfiletype python
 autocmd BufNewFile,BufRead *.html setfiletype html
 autocmd BufNewFile,BufRead *.hbs setfiletype html
 
-inoremap {<Enter> {}<Left><CR><ESC><S-o><Tab>
-inoremap [<Enter> []<Left><CR><ESC><S-o><Tab>
-inoremap else<Enter> else<CR><Tab>
-inoremap else:<Enter> else:<CR><Tab>
+inoremap {<Enter> {}<Left><CR><ESC><S-o> 
+inoremap [<Enter> []<Left><CR><ESC><S-o>
 
 nnoremap <C-n> :tabnext<CR> 
 nnoremap <C-p> :tabprev<CR>
