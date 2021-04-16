@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
 Plugin 'mattn/emmet-vim'          " htmlタグの補完
 Plugin 'vim-airline/vim-airline'  " vimのステータスバーをいい感じにする, powerline fontsをインストールする必要がある
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-commentary'     " コメントアウトが楽にできる
 
 call vundle#end()
 filetype plugin indent on
