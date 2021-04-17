@@ -1,19 +1,8 @@
-" ----------------------------------------------------------------------------------------------
-" vim vundle settings
-filetype off 
-set shellslash 
-set rtp+=~/vimfiles/bundle/Vundle.vim  " set the runtime path to include Vundle and initialize
-call vundle#begin('~/vimfiles/bundle') 
+" load vundle.vim settings
+if filereadable(expand('$HOME/dotfiles/.vimrc.vundle'))
+  source $HOME/dotfiles/.vimrc.vundle
+endif
 
-Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
-Plugin 'mattn/emmet-vim'          " htmlタグの補完
-Plugin 'vim-airline/vim-airline'  " vimのステータスバーをいい感じにする, powerline fontsをインストールする必要がある
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-commentary'     " コメントアウトが楽にできる
-
-call vundle#end()
-filetype plugin indent on
-" ----------------------------------------------------------------------------------------------
 " for vim-airline
 let g:airline_theme = 'wombat'               "テーマの設定
 let g:airline#extensions#tabline#enabled=1 " タブラインを表示
