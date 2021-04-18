@@ -28,6 +28,9 @@ set cursorline
 set splitbelow
 set splitright 
 
+set encoding=utf-8                               " vimの内部で使用される文字コード
+set fileencodings=iso-2022-jp,eus-jp,sjis,utf-8  " 開いたファイルを前から順番に試すencodingに変換
+
 " ファイル処理関連の設定
 set autoread   " 外部でファイルに変更された場合は読みなおす
 set noswapfile " ファイル編集中にスワップファイルを作らない
