@@ -3,6 +3,10 @@ if filereadable(expand('$HOME/dotfiles/.vimrc.vundle'))
   source $HOME/dotfiles/.vimrc.vundle
 endif
 
+if filereadable(expand('$HOME/dotfiles/.vimrc.indent'))
+  source $HOME/dotfiles/.vimrc.indent
+endif
+
 " for vim-airline
 let g:airline_theme = 'wombat'               "テーマの設定
 let g:airline#extensions#tabline#enabled=1 " タブラインを表示
@@ -16,10 +20,6 @@ set number         "行番号を表示する
 set title          "編集中のファイル名を表示
 set showmatch      "カッコ入力時の対応するカッコを表示
 
-set tabstop=2      "インデントをスペース2つ分に設定
-set expandtab      "tabをスペースにする
-set autoindent     "改行した時に自動でインデントする
-set shiftwidth=2   "自動インデントのインデントの長さ
 set columns=140
 set lines=40
 set hlsearch       "ハイライト
@@ -46,8 +46,6 @@ set completeopt=menuone,noinsert
 set list
 set listchars=eol:↲ "行末の表示
 
-autocmd BufNewFile,BufRead *.py setlocal tabstop=4 shiftwidth=4 expandtab
-" autocmd BufNewFile,BufRead *.py setlocal tabstop=4 shiftwidth=4 
 autocmd BufNewFile,BufRead *.launch setfiletype xml
 autocmd BufNewFile,BufRead *.py setfiletype python
 autocmd BufNewFile,BufRead *.html setfiletype html
