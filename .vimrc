@@ -20,8 +20,8 @@ set number         "行番号を表示する
 set title          "編集中のファイル名を表示
 set showmatch      "カッコ入力時の対応するカッコを表示
 
-set columns=140
-set lines=40
+" set columns=140
+" set lines=40
 set hlsearch       "ハイライト
 set cursorline 
 "set swapfile
