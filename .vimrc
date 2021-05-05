@@ -8,14 +8,10 @@ if filereadable(expand('$HOME/dotfiles/.vimrc.indent'))
 endif
 
 " for vim-airline
-let g:airline_theme = 'wombat'               "テーマの設定
-let g:airline#extensions#tabline#enabled=1 " タブラインを表示
-let g:airline_powerline_fonts = 1            " Powerline Fontsを利用
-let g:airline#extensions#tabline#right = '<'
-let g:airline#extensions#tabline#left = '>'
-let g:airline_left_sep = '>'
-let g:airline_right_sep = '<'
-" コピペしたやつ
+let g:airline_theme = 'wombat'              "テーマの設定
+let g:airline#extensions#tabline#enabled=1  " タブラインを表示
+" let g:airline_powerline_fonts = 1         " Powerline Fontsを利用(windowsでうまくいかない)
+
 set number         "行番号を表示する
 set title          "編集中のファイル名を表示
 set showmatch      "カッコ入力時の対応するカッコを表示
