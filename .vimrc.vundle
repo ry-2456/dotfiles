@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline'  " vimのステータスバーをいい感じ�
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-commentary'     " コメントアウトが楽にできる
 Plugin 'dhruvasagar/vim-table-mode' "テーブル作成
+Plugin 'Yggdroot/indentLine'      " displya vertical line at each indentation
 
 call vundle#end()
 filetype plugin indent on

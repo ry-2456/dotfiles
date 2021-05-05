@@ -12,6 +12,8 @@ let g:airline_theme = 'wombat'              "テーマの設定
 let g:airline#extensions#tabline#enabled=1  " タブラインを表示
 " let g:airline_powerline_fonts = 1         " Powerline Fontsを利用(windowsでうまくいかない)
 
+let g:indentLine_enabled = 1                " enable indentLine plugin
+
 set number         "行番号を表示する
 set title          "編集中のファイル名を表示
 set showmatch      "カッコ入力時の対応するカッコを表示
