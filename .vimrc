@@ -14,6 +14,7 @@ let g:airline#extensions#tabline#enabled=1  " タブラインを表示
 
 let g:indentLine_enabled = 1                " enable indentLine plugin
 
+  
 set number         "行番号を表示する
 set title          "編集中のファイル名を表示
 set showmatch      "カッコ入力時の対応するカッコを表示
@@ -55,14 +56,23 @@ noremap [<Enter> []<Left><CR><ESC><S-o>
 nnoremap <C-n> :tabnext<CR>
 nnoremap <C-p> :tabprev<CR>
 
-nnoremap <C-H> <C-W><C-H> 
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap > <C-w>> "幅を増やす
-nnoremap < <C-w>< "幅を減らす
-nnoremap + <C-w>+ "高さを増やす
-nnoremap - <C-w>- "高さを減らす
+" 画面分割時設定
+" h:← j:↓ k:↑ l:→
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+" for terminal mode
+set termwinkey=<C-l> " map <C-w> to <C-l> when terminal-job mode. (for vim 8.1 or later. use termkey instead for vim 8.0 or older)
+tnoremap <C-h> <C-l>h
+tnoremap <C-j> <C-l>j
+tnoremap <C-k> <C-l>k
+tnoremap <C-l> <C-l>l
+" 幅増>,幅減<,高増+,高減-
+nnoremap > <C-w>>
+nnoremap < <C-w><
+nnoremap + <C-w>+
+nnoremap - <C-w>-
 
 " this if for hybrid colorscheme
 " set background=dark
