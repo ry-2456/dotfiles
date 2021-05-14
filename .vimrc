@@ -58,16 +58,16 @@ nnoremap <C-p> :tabprev<CR>
 
 " 画面分割時設定
 " h:← j:↓ k:↑ l:→
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <C-g>h <C-w>h
+nnoremap <C-g>j <C-w>j
+nnoremap <C-g>k <C-w>k
+nnoremap <C-g>l <C-w>l
 " for terminal mode
-set termwinkey=<C-l> " map <C-w> to <C-l> when terminal-job mode. (for vim 8.1 or later. use termkey instead for vim 8.0 or older)
-tnoremap <C-h> <C-l>h
-tnoremap <C-j> <C-l>j
-tnoremap <C-k> <C-l>k
-tnoremap <C-l> <C-l>l
+set termwinkey=<C-q> " map <C-w> to <C-q> when terminal-job mode. (for vim 8.1 or later. use termkey instead for vim 8.0 or older)
+tnoremap <C-g>h <C-q>h
+tnoremap <C-g>j <C-q>j
+tnoremap <C-g>k <C-q>k
+tnoremap <C-g>l <C-q>l
 " 幅増>,幅減<,高増+,高減-
 nnoremap > <C-w>>
 nnoremap < <C-w><
