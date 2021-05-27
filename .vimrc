@@ -28,6 +28,7 @@ set splitbelow
 set splitright 
 
 set encoding=utf-8                               " vimの内部で使用される文字コード
+set fileencoding=utf-8                           " ファイル書き込み時の文字コード
 set fileencodings=iso-2022-jp,eus-jp,sjis,utf-8  " 開いたファイルを前から順番に試すencodingに変換
 
 " ファイル処理関連の設定
