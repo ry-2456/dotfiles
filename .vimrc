@@ -14,7 +14,8 @@ let g:airline#extensions#tabline#enabled=1  " タブラインを表示
 
 let g:indentLine_enabled = 1                " enable indentLine plugin
 
-  
+let g:vim_json_conceal=0 " display double quation of json file
+
 set number         "行番号を表示する
 set title          "編集中のファイル名を表示
 set showmatch      "カッコ入力時の対応するカッコを表示
