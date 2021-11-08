@@ -1,8 +1,8 @@
 " load vundle.vim settings
 
 set runtimepath+=$HOME/dotfiles
-runtime .vimrc.vundle
-runtime .vimrc.indent
+runtime! plugins/*.vim
+runtime! init/*.vim
 
 " for vim-airline
 let g:airline_theme = 'wombat'              "テーマの設定
