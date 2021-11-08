@@ -1,13 +1,6 @@
-" load vundle.vim settings
-
 set runtimepath+=$HOME/dotfiles
 runtime! plugins/*.vim
 runtime! init/*.vim
-
-" for vim-airline
-let g:airline_theme = 'wombat'              "テーマの設定
-let g:airline#extensions#tabline#enabled=1  " タブラインを表示
-" let g:airline_powerline_fonts = 1         " Powerline Fontsを利用(windowsでうまくいかない)
 
 let g:indentLine_enabled = 1                " enable indentLine plugin
 

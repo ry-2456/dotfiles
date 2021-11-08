@@ -13,8 +13,6 @@ endif
 
 Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
 Plugin 'mattn/emmet-vim'          " htmlタグの補完
-Plugin 'vim-airline/vim-airline'  " vimのステータスバーをいい感じにする, powerline fontsをインストールする必要がある
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-commentary'     " コメントアウトが楽にできる
 Plugin 'dhruvasagar/vim-table-mode' "テーブル作成
 Plugin 'Yggdroot/indentLine'      " displya vertical line at each indentation
