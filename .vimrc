@@ -49,30 +49,6 @@ autocmd BufNewFile,BufRead *.py setfiletype python
 autocmd BufNewFile,BufRead *.html setfiletype html
 autocmd BufNewFile,BufRead *.hbs setfiletype html
 
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
-
-" 画面分割時設定
-" h:← j:↓ k:↑ l:→
-nnoremap <C-g>h <C-w>h 
-nnoremap <C-g>j <C-w>j
-nnoremap <C-g>k <C-w>k
-nnoremap <C-g>l <C-w>l
-nnoremap <C-g>n :tabnext<CR>
-nnoremap <C-g>p :tabprev<CR>
-" for terminal mode
-set termwinkey=<C-q> " map <C-w> to <C-q> when terminal-job mode. (for vim 8.1 or later. use termkey instead for vim 8.0 or older)
-tnoremap <C-g>h <C-q>h
-tnoremap <C-g>j <C-q>j
-tnoremap <C-g>k <C-q>k
-tnoremap <C-g>l <C-q>l
-tnoremap <C-g>n <C-q>:tabnext<CR>
-tnoremap <C-g>p <C-q>:tabprev<CR>
-" 幅増>,幅減<,高増+,高減-
-nnoremap > <C-w>>
-nnoremap < <C-w><
-nnoremap + <C-w>+
-nnoremap - <C-w>-
 
 " this if for hybrid colorscheme
 " set background=dark
