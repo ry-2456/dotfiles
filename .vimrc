@@ -1,9 +1,6 @@
 set runtimepath+=$HOME/dotfiles
 runtime! plugins/*.vim
 runtime! init/*.vim
-
-let g:indentLine_enabled = 1                " enable indentLine plugin
-
 let g:vim_json_conceal=0 " display double quation of json file
 
 set number         "行番号を表示する
