@@ -34,7 +34,6 @@ set completeopt=menuone,noinsert
 
 set list
 set listchars=eol:↲ "行末の表示
-filetype on
 
 
 syntax enable
