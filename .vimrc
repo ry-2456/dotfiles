@@ -40,24 +40,6 @@ autocmd BufNewFile,BufRead *.html setfiletype html
 autocmd BufNewFile,BufRead *.hbs setfiletype html
 
 
-" this if for hybrid colorscheme
-" set background=dark
-" colorscheme hybrid
-" colorscheme molokai
-" colorscheme atom-dark-256
-" colorscheme zenburn
-colorscheme tender
-syntax on
-set t_Co=256
-
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
-highlight LineNr ctermbg=none
-highlight Folded ctermbg=none
-highlight EndOfBuffer ctermbg=none
-
-highlight LineNr ctermfg=94
-
 autocmd BufNewFile,BufRead *.py nnoremap <C-e>2 :!python2 %
 autocmd BufNewFile,BufRead *.py nnoremap <C-e>3 :!python3 %
 autocmd BufNewFile,BufRead *.sh nnoremap <C-e>b :!bash %
