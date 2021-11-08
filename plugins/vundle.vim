@@ -11,11 +11,18 @@ if has("unix")                       " for unix
   call vundle#begin()
 endif
 
-Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
-Plugin 'mattn/emmet-vim'          " htmlタグの補完
-Plugin 'tpope/vim-commentary'     " コメントアウトが楽にできる
-Plugin 'dhruvasagar/vim-table-mode' "テーブル作成
-Plugin 'Yggdroot/indentLine'      " displya vertical line at each indentation
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'  
+" htmlタグの補完
+Plugin 'mattn/emmet-vim'  
+" status lineをいい感じに
+Plugin 'itchyny/lightline.vim'
+" comment out easily
+Plugin 'tpope/vim-commentary'
+" make table easily
+Plugin 'dhruvasagar/vim-table-mode'
+" displya vertical line at each indentation
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 filetype plugin indent on
