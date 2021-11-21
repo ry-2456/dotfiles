@@ -18,6 +18,7 @@ nnoremap > <C-w>>
 nnoremap < <C-w><
 nnoremap + <C-w>+
 nnoremap - <C-w>-
+nnoremap = <C-W>=
 
 " terminal mode
 " map <C-w> to <C-q> when terminal-job mode. (for vim 8.1 or later. use termkey instead for vim 8.0 or older)
