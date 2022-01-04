@@ -13,4 +13,4 @@ autocmd BufNewFile,BufRead *.py setlocal tabstop=4 shiftwidth=4
 
 "php related
 autocmd BufNewFile,BufRead *.php setlocal tabstop=4 shiftwidth=4
-autocmd BufNewFile,BufRead *.blade.php setlocal tabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.blade.php setlocal tabstop=4 shiftwidth=4

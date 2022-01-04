@@ -35,5 +35,7 @@ set completeopt=menuone,noinsert
 set list
 set listchars=eol:↲ "行末の表示
 
+" 長い行を表示
+set display=lastline
 
 syntax enable
