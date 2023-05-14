@@ -3,6 +3,11 @@
 mklink %HOMEPATH%\_vimrc %HOMEPATH%\dotfiles\.vimrc
 mklink /D %HOMEPATH%\vimfiles\colors %HOMEPATH%\dotfiles\colors
 
+@rem make .vimsessions dir to save vim sessions
+if not exist %HOMEPATH%\.vimsessions (
+  mkdir %HOMEPATH%\.vimsessions
+)
+
 @rem install Vundle.vim if not installed
 @rem set VUNDLE_INSTALL_PATH = %HOMEPATH%\vimfiles\bundle\Vundle.vim
 @rem echo %VUNDLE_INSTALL_PATH%
