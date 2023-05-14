@@ -23,6 +23,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'dhruvasagar/vim-table-mode'
 " displya vertical line at each indentation
 Plugin 'Yggdroot/indentLine'
+" sql formetter
+Plugin 'mattn/vim-sqlfmt'
 
 call vundle#end()
 filetype plugin indent on
