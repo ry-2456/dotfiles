@@ -1,8 +1,10 @@
 let g:vim_json_conceal=0
-
-set number         "行番号を表示する
-set title          "編集中のファイル名を表示
-set showmatch      "カッコ入力時の対応するカッコを表示
+" display row numbers
+set number
+set title          
+"行番号を表示する
+set showmatch      
+" set background=dark
 
 "command line modeで候補の覧表示
 set wildmenu
