@@ -15,7 +15,8 @@ ln -sf ~/dotfiles/colors ~/.vim/colors
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # install Vundle.vim
-if [ -e ~/.vim/bundle/Vundle.vim ]; then
-  rm -rf ~/.vim/bundle/Vundle.vim
+VUNDLE_INSTALL_PATH=~/.vim/bundle/Vundle.vim
+if [ -e $VUNDLE_INSTALL_PATH ]; then
+  rm -rf $VUNDLE_INSTALL_PATH
 fi
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git $VUNDLE_INSTALL_PATH
