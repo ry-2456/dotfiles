@@ -40,4 +40,8 @@ set listchars=eol:↲ "行末の表示
 " 長い行を表示
 set display=lastline
 
+" cursor shape
+let &t_SI = "\e[6 q" " block in normal mode
+let &t_EI = "\e[2 q" " bar in insert mode 
+
 syntax enable
