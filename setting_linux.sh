@@ -12,7 +12,7 @@ if [ ! -e ~/.vimsessions ]; then
 fi
 
 ln -sf ~/dotfiles/colors ~/.vim/colors
-ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/tmux.conf ~/.tmux.conf
 
 # install Vundle.vim
 VUNDLE_INSTALL_PATH=~/.vim/bundle/Vundle.vim
