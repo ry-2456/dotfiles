@@ -26,6 +26,7 @@ set fileencodings=utf-8,iso-2022-jp,eus-jp,sjis " 開いたファイルを前か
 set autoread   " 外部でファイルに変更された場合は読みなおす
 set noswapfile " ファイル編集中にスワップファイルを作らない
 set nobackup
+set hidden " バッファ未保存でも切り替え可能に
 
 let g:netrw_liststyle=3   "ファイルの表示スタイル let g:netrw_banner=0      "バナーの非表示
 let g:netrw_banner=0 " バナーの非表示
